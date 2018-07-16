@@ -1,0 +1,251 @@
+@charset "utf-8";
+// 公共样式
+$rem:82.8;//定义页面尺寸
+$color_pub:#1d2228;
+$color_menu:#fff;
+$color_f:#ccc;
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; } 
+body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; } 
+h1, h2, h3, h4, h5, h6{ font-size:100%; } 
+address, cite, dfn, em, var { font-style:normal; } 
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; } 
+small{ font-size:12px; } 
+ul, ol { list-style:none; } 
+a { text-decoration:none; } 
+/*a:hover { text-decoration:underline; } */
+sup { vertical-align:text-top; } 
+sub{ vertical-align:text-bottom; } 
+legend { color:#000; } 
+fieldset, img { border:0; } 
+button, input, select, textarea { font-size:100%; } 
+table { border-collapse:collapse; border-spacing:0; }
+
+body {
+    margin: 0px;
+    padding:0px;
+    font-size: 0.21333333rem;
+    font-family: Arial, '微软雅黑';
+    background:$color_menu;
+  }
+  header{
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      height: 88/$rem*1rem;
+      border-bottom: 1/$rem*1rem solid yellow;
+    //  background: pink;
+       .location{
+           display: flex;
+        //    justify-content: flex-start;
+           align-items: center;
+          
+           width: 25%;
+           height: 100%;
+        //    border:1px solid red;
+           p{
+                font-size: 32/$rem*1rem;
+                color: #2c2c2c; 
+           }    
+           img{
+               width: 21%;
+               height: 33%;
+               margin-top: 6/$rem*1rem;
+           }   
+    }
+         span{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+            width: 30%;
+           height: 100%;
+        //    border:1px solid red;
+           font-size: 38/$rem*1rem;
+            color: #555; 
+            // text-align: center;
+            // line-height: 100%;
+    }
+        h5{
+           display: flex;
+           justify-content: flex-end;
+           align-items: center;
+            width: 20%;
+            height: 100%;
+            // border:1px solid red; 
+        img{
+            width: 42%;
+            height: 60%;
+        }
+    }
+  }
+  
+ section{
+     width: 100%;
+     height: 1472/$rem*1rem;
+    //  border:  1px solid yellow;
+    // background: pink;
+    .first{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // position: relative;
+        width: 100%;
+        height:440/$rem*1rem;
+        // border: 1px solid black;
+        background: url(../imgs/tou.jpg) no-repeat  ;
+        background-size: 100% 100%;
+
+        .top{
+            display: flex;
+            justify-content: center;
+            width: 70%;
+            height: 20%;
+            // border: 1px solid red;
+
+        span{  
+            font-size: 86/$rem*1rem;
+            font-family: 华文行楷;
+            color: #fff;
+            }
+        }
+        .bottom{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20/$rem*1rem;
+            width: 50%;
+            height: 15%;
+            background: rgba(0, 0, 0, 0.4);        
+        
+        p{
+            font-size: 36/$rem*1rem;
+            color: #fff;
+          }
+        }
+       
+    }
+     .second{
+         margin-top:16/$rem*1rem;
+         margin-bottom: 30/$rem*1rem;
+        width: 100%;
+        height: 500/$rem*1rem;
+        // border:  1px solid red;
+
+        img{
+            width: 100%;
+            height: 80%;
+        }
+        p{
+            font-size: 32/$rem*1rem;
+            margin-left: 16/$rem*1rem;
+        }
+        .news{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 50/$rem*1rem;
+            // border: 1px solid black;
+            .name{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 50%;
+                height: 100%;
+                // border: 1px solid greenyellow;
+
+                .name1{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 48%;
+                    height: 100%; 
+                    // border: 1px solid blue;  
+
+
+
+                    img{
+                    width: 25%;
+                    height: 80%;
+                    }
+                      p{
+                    font-size: 28/$rem*1rem;
+                    color:#666;
+                     }
+                }
+                h6{
+                    font-size: 30/$rem*1rem; 
+                    color:#747474;
+
+                    span{
+                        color: #F98E8E;
+                    }
+                }
+                
+            }
+        }
+        .distance{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            height: 100%;
+            // border: 1px solid blue;
+            
+            img{
+                width: 15%;
+                height: 80%;
+            }
+        }
+    }
+ }
+
+
+
+
+
+ footer{
+     width: 100%;
+     height: 98/$rem*1rem;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    ul{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        li:nth-child(3) a img{
+             width: 40%;
+             height: 64%; 
+        }
+
+        li{
+            display: flex;
+            width: 33%;
+            height: 100%;
+            // border: 1px solid red;
+
+            a{
+                display: flex;
+                flex-direction: column; 
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+
+                img{
+                    width: 30%;
+                    height: 64%; }
+                p{
+                    font-size: 28/$rem*1rem;
+                    color: #929292}
+
+            }
+        }
+    }
+ }
